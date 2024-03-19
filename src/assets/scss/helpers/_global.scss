@@ -36,6 +36,13 @@ body {
 	padding: 0 var(--padding);
 }
 
+.py-70 {
+	padding: 70px 0;
+	@media screen and (max-width: 992px) {
+		padding: 30px 0;
+	}
+}
+
 .swiper-pagination-bullet {
 	background-color: #46a6a2;
 	opacity: 1;
