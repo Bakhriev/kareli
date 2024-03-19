@@ -3,7 +3,9 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 10px;
+}
 
+.social-link {
 	&__icon {
 		display: block;
 		width: 24px;

@@ -32,3 +32,10 @@ window.addEventListener('resize', () => {
 		moveElement('.header__actions', '.header__container');
 	}
 });
+
+const swiper = new Swiper('.swiper', {
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});

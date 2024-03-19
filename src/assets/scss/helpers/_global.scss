@@ -21,5 +21,30 @@ body {
 	margin: 0 auto;
 
 	max-width: calc(var(--width) + var(--padding));
+	width: 100%;
 	padding: 0 var(--padding);
+}
+
+.container-lg {
+	--padding: 15px;
+	--width: 1920px;
+
+	margin: 0 auto;
+
+	max-width: calc(var(--width) + var(--padding));
+	width: 100%;
+	padding: 0 var(--padding);
+}
+
+.swiper-pagination-bullet {
+	background-color: #46a6a2;
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+	border-radius: 0;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #fff;
+	opacity: 1;
 }
