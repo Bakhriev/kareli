@@ -1,0 +1,25 @@
+body {
+	font: 400 16px/1.15 var(--font-family);
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.app {
+	overflow: hidden;
+
+	min-height: 100vh;
+}
+
+.main {
+	flex: 1;
+}
+
+.container {
+	--padding: 15px;
+	--width: 1200px;
+
+	margin: 0 auto;
+
+	max-width: calc(var(--width) + var(--padding));
+	padding: 0 var(--padding);
+}
