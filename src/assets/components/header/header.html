@@ -1,1 +1,49 @@
-<header class="header"></header>
+<header class="header">
+	<div class="header__container container">
+		<a href="/" class="header__logo logo" aria-label="Главная">
+			<img
+				width="133"
+				height="85"
+				src="./assets/img/svg/logo.svg"
+				alt="Логотип ИЖС Карелии - стилизованное изображение дома и дерева на зеленом фоне с надписью на русском языке 'ИЖС Карелии'"
+				class="logo__img"
+			/>
+		</a>
+
+		<nav class="header__nav">
+			<ul class="header__menu menu list-reset">
+				<li>
+					<a href="#" class="menu__link">О компании</a>
+				</li>
+				<li>
+					<a href="#" class="menu__link">Товары</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="header__actions">
+			<div class="header__contact-links contact-links">
+				<ul class="header__socials socials list-reset">
+					<li>
+						<a href="#" target="_blank" aria-label="наш ватсап">
+							<svg class="socials__icon">
+								<use href="./assets/img/svg/sprite.svg#ws"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" aria-label="наш телеграм">
+							<svg class="socials__icon">
+								<use href="./assets/img/svg/sprite.svg#tg"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				@include('../phone-link/phone-link.html')
+			</div>
+			<button class="header__btn btn btn-reset">Задать вопрос</button>
+		</div>
+
+		@include('../burger/burger.html')
+	</div>
+</header>

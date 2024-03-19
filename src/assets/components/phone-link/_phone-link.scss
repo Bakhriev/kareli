@@ -1,0 +1,15 @@
+.phone-link {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 1.1;
+	color: var(--white);
+
+	transition: color 150ms ease-in-out;
+
+	text-decoration: none;
+
+	@include hover {
+		color: #49e496;
+	}
+}

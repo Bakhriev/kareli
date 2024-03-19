@@ -1,0 +1,16 @@
+.socials {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	&__icon {
+		display: block;
+		width: 24px;
+		height: 24px;
+		transition: scale 150ms ease-in-out;
+		@include hover {
+			scale: 1.1;
+		}
+	}
+}
