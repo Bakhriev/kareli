@@ -49,9 +49,24 @@ body {
 	width: 10px;
 	height: 10px;
 	border-radius: 0;
+	margin-left: 15px !important;
 }
 
 .swiper-pagination-bullet-active {
 	background-color: #fff;
 	opacity: 1;
+}
+
+.link-back {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+	color: var(--light-green);
+	text-decoration: none;
+	transition: color 150ms ease-in-out;
+	@include hover {
+		color: var(--dark-green);
+	}
 }
