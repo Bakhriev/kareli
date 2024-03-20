@@ -16,10 +16,12 @@
 			@include('./assets/components/header/header.html')
 			<main class="main">
 				<!--  -->
-				@include('./assets/components/hero/hero.html')
-				@include('./assets/components/advantages/advantages.html')
-				@include('./assets/components/our-products/our-products.html')
-				@include('./assets/components/map/map.html')
+				<div class="container">
+					<div class="py-20">
+						@include('./assets/components/breadcrumb/breadcrumb.html')
+					</div>
+				</div>
+				@include('./assets/components/product-catalog/product-catalog.html')
 				<!--  -->
 			</main>
 			@include('./assets/components/footer/footer.html')
