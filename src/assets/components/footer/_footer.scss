@@ -49,9 +49,11 @@
 		line-height: 1.25;
 		letter-spacing: -0.01em;
 		color: #e0e7e6;
+
 		@media screen and (max-width: 992px) {
 			max-width: 100%;
 		}
+
 		@media screen and (max-width: 500px) {
 			text-align: center;
 		}
