@@ -1,0 +1,97 @@
+.footer {
+	padding: 40px 0;
+	background-color: var(--dark-green);
+	@media screen and (max-width: 768px) {
+		padding: 20px 0;
+	}
+	&__container {
+		display: flex;
+		align-items: flex-end;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 20px;
+		@media screen and (max-width: 575px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: flex-end;
+		gap: 40px;
+		@media screen and (max-width: 575px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+		}
+	}
+
+	&__logo {
+		width: 81px;
+		height: 52px;
+	}
+
+	&__nav {
+	}
+
+	&__menu {
+		.menu__link {
+			color: var(--green-100);
+		}
+	}
+
+	&__copy {
+		max-width: 233px;
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.25;
+		letter-spacing: -0.01em;
+		color: #e0e7e6;
+	}
+
+	&__link {
+		display: block;
+		color: var(--green-100);
+		text-decoration: none;
+		transition: color 150ms ease-in-out;
+		@include hover {
+			color: var(--light-green);
+		}
+	}
+
+	&__text {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.25;
+		letter-spacing: -0.01em;
+		color: #e0e7e6;
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		@media screen and (max-width: 575px) {
+			flex-direction: column;
+		}
+	}
+
+	&__contact-links {
+	}
+
+	&__socials {
+	}
+
+	&__btn {
+		border-color: var(--green-100);
+		background-color: var(--dark-green);
+		color: var(--white);
+	}
+
+	&__phone-link {
+		font-size: 20px;
+	}
+}
