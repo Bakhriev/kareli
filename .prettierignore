@@ -1,0 +1,5 @@
+# Ignore all JS files in the "vendors" directory
+vendors/**/*.js
+
+# Ignore all CSS files in the "vendors" directory 
+vendors/**/*.css
