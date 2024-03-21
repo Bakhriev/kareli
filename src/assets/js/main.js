@@ -123,4 +123,7 @@ function initMap() {
 }
 
 // Инициализация Yandex.Maps API
-ymaps.ready(initMap);
+
+document.addEventListener('DOMContentLoaded', () => {
+	ymaps.ready(initMap);
+});
