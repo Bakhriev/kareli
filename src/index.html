@@ -14,17 +14,25 @@
 		<div class="app flex-column">
 			@include('./assets/components/overlay/overlay.html')
 			@include('./assets/components/header/header.html')
+			<!-- Form Popup -->
+			@include('./assets/components/form/form.html')
+			<!-- Form Popup -->
 			<main class="main">
 				<!--  -->
 				@include('./assets/components/hero/hero.html')
 				@include('./assets/components/advantages/advantages.html')
 				@include('./assets/components/our-products/our-products.html')
 				@include('./assets/components/map/map.html')
-				@include('./assets/components/form/form.html')
 				<!--  -->
 			</main>
+
 			@include('./assets/components/footer/footer.html')
 		</div>
+
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=bded5c5b-894e-4afa-ba3f-904a4174e0ee&lang=ru_RU"
+			type="text/javascript"
+		></script>
 		<script src="./assets/vendors/imask.min.js"></script>
 		<script src="./assets/vendors/swiper-bundle-min.js"></script>
 		<script src="./assets/js/main.js"></script>
