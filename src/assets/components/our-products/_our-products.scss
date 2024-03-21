@@ -43,6 +43,11 @@
 			visibility: visible;
 		}
 	}
+
+	&__img-wrapper {
+		position: relative;
+	}
+
 	&__img {
 		margin-bottom: 10px;
 		max-width: 290px;
@@ -61,9 +66,8 @@
 
 	&__link {
 		position: absolute;
-		top: 80px;
-		left: 50%;
-		transform: translateX(-50%);
+		@include center;
+
 		text-decoration: none;
 		opacity: 0;
 		visibility: hidden;

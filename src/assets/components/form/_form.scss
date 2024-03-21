@@ -163,8 +163,15 @@
 	}
 }
 .agreement {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 	&__checkbox {
 		accent-color: #147470;
+		margin: 0;
+		flex-shrink: 0;
+		width: 20px;
+		height: 20px;
 	}
 	&__text {
 		font-family: var(--font-family);

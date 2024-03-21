@@ -11,7 +11,6 @@
 @import './helpers/global';
 
 //  Components
-@import '../components/header/header';
 @import '../components/burger/burger';
 @import '../components/overlay/overlay';
 @import '../components/btn/btn';
@@ -19,14 +18,26 @@
 @import '../components/contact-links/contact-links';
 @import '../components/nav/nav';
 @import '../components/socials/socials';
-@import '../components/hero/hero';
-@import '../components/advantages/advantages';
-@import '../components/our-products/our-products';
-@import '../components/map/map';
 @import '../components/breadcrumb/breadcrumb';
-@import '../components/product-catalog/product-catalog';
-@import '../components/product/product';
-@import '../components/about-page/about';
+@import '../components/pagination/pagination';
 @import '../components/form/form';
+@import '../components/product/product';
+
+// Layouts
+@import '../components/header/header';
+
+@import '../components/hero/hero';
+
+@import '../components/advantages/advantages';
+
+@import '../components/our-products/our-products';
+
+@import '../components/map/map';
+
+@import '../components/product-catalog/product-catalog';
+
+@import '../components/about-page/about';
+
 @import '../components/checkout-page/checkout';
+
 @import '../components/footer/footer';

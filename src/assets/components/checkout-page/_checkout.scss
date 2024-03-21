@@ -1,12 +1,5 @@
 .checkout {
 	&__title {
-		margin-bottom: 20px;
-		padding-top: 60px;
-		padding-bottom: 30px;
-		@media screen and (max-width: 992px) {
-			padding-top: 30px;
-			padding-bottom: 0;
-		}
 		@media screen and (max-width: 500px) {
 			text-align: center;
 		}
