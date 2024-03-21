@@ -2,16 +2,37 @@ const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.header__nav');
 const overlay = document.querySelector('.overlay');
 
+const form = document.querySelector('.form-wrapper');
+const formCloseBtn = document.querySelector('.form__close-btn');
+const askQuestionBtns = document.querySelectorAll('[data-trigger="form"]');
+const body = document.body;
+
+askQuestionBtns.forEach(btn => {
+	btn.addEventListener('click', () => {
+		form.classList.add('active');
+		body.classList.add('disable-scroll');
+		overlay.classList.add('active');
+	});
+});
+
+formCloseBtn.addEventListener('click', () => {
+	form.classList.remove('active');
+	body.classList.remove('disable-scroll');
+	overlay.classList.remove('active');
+});
+
 burger.addEventListener('click', () => {
 	burger.classList.toggle('active');
 	mobileMenu.classList.toggle('active');
 	overlay.classList.toggle('active');
+	body.classList.toggle('disable-scroll');
 });
 
 overlay.addEventListener('click', () => {
 	burger.classList.remove('active');
 	mobileMenu.classList.remove('active');
 	overlay.classList.remove('active');
+	body.classList.remove('disable-scroll');
 });
 
 const swiper = new Swiper('.hero__slider', {
