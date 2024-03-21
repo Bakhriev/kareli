@@ -1,10 +1,17 @@
 .section-map {
 	position: relative;
 	min-height: 750px;
+	@media screen and (max-width: 1200px) {
+		min-height: 0px;
+	}
 
 	&__container {
 		display: flex;
 		justify-content: flex-end;
+		@media screen and (max-width: 1200px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }
 
@@ -13,10 +20,15 @@
 	height: 100%;
 	width: 100%;
 	background-color: #222;
+	@media screen and (max-width: 1200px) {
+		height: 300px;
+	}
+	@media screen and (max-width: 1200px) {
+		position: relative;
+	}
 }
 
 .info-card {
-	display: none;
 	position: relative;
 	z-index: 1;
 	max-width: 640px;
@@ -36,8 +48,11 @@
 		letter-spacing: -0.01em;
 		color: #333;
 		background-color: var(--white);
+
 		@media screen and (max-width: 992px) {
-			padding: 20px;
+			padding: 0;
+			padding-top: 30px;
+			padding-bottom: 40px;
 		}
 	}
 
@@ -177,4 +192,10 @@
 	&::after {
 		display: none !important;
 	}
+}
+.ymaps-2-1-79-map-copyrights-promo {
+	display: none !important;
+}
+.ymaps-2-1-79-copyright {
+	display: none !important;
 }
