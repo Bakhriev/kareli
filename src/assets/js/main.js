@@ -39,3 +39,11 @@ const productSlider = new Swiper('.product__slider2', {
 		swiper: productSliderThumb,
 	},
 });
+
+const element = document.getElementById('phone');
+const maskOptions = {
+	mask: '+7(000)000-00-00',
+	lazy: true,
+};
+
+const mask = new IMask(element, maskOptions);

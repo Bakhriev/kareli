@@ -10,7 +10,7 @@
 
 		<title>ИЖС Карелии</title>
 	</head>
-	<body>
+	<body class="disable-scroll">
 		<div class="app flex-column">
 			@include('./assets/components/overlay/overlay.html')
 			@include('./assets/components/header/header.html')
@@ -20,10 +20,12 @@
 				@include('./assets/components/advantages/advantages.html')
 				@include('./assets/components/our-products/our-products.html')
 				@include('./assets/components/map/map.html')
+				@include('./assets/components/form/form.html')
 				<!--  -->
 			</main>
 			@include('./assets/components/footer/footer.html')
 		</div>
+		<script src="./assets/vendors/imask.min.js"></script>
 		<script src="./assets/vendors/swiper-bundle-min.js"></script>
 		<script src="./assets/js/main.js"></script>
 	</body>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/png" href="./favicon.png" />
+		<link rel="stylesheet" href="./assets/vendors/swiper-bundle-min.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+
+		<title>ИЖС Карелии</title>
+	</head>
+	<body>
+		<div class="app flex-column">
+			@include('./assets/components/overlay/overlay.html')
+			@include('./assets/components/header/header.html')
+			<main class="main">
+				<div class="container">
+					<div class="py-20">
+						<nav aria-label="breadcrumb">
+							<ol
+								class="breadcrumb list-reset"
+								itemscope
+								itemtype="https://schema.org/BreadcrumbList"
+							>
+								<li
+									class="breadcrumb__item"
+									itemprop="itemListElement"
+									itemscope
+									itemtype="https://schema.org/ListItem"
+								>
+									<a href="/" class="breadcrumb__link" itemprop="item">
+										<span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1" />
+									</a>
+								</li>
+								<li
+									class="breadcrumb__item"
+									itemprop="itemListElement"
+									itemscope
+									itemtype="https://schema.org/ListItem"
+								>
+									<a href="#" class="breadcrumb__link" itemprop="item">
+										<span itemprop="name">Товары</span>
+										<meta itemprop="position" content="2" />
+									</a>
+								</li>
+								<li
+									class="breadcrumb__item"
+									itemprop="itemListElement"
+									itemscope
+									itemtype="https://schema.org/ListItem"
+								>
+									<a href="#" class="breadcrumb__link" itemprop="item">
+										<span itemprop="name">Гибкий камень</span>
+										<meta itemprop="position" content="2" />
+									</a>
+								</li>
+								<li
+									class="breadcrumb__item"
+									itemprop="itemListElement"
+									itemscope
+									itemtype="https://schema.org/ListItem"
+									aria-current="page"
+								>
+									<span>арт. kgs01</span>
+								</li>
+							</ol>
+						</nav>
+					</div>
+					<!--  -->
+				</div>
+				<div class="checkout">
+					<div class="container">
+						<h2 class="checkout__title section-title">Форма заказа</h2>
+						<div class="selected-product">
+							<img
+								src="./assets/img/selected-product.png"
+								alt="#"
+								class="selected-product__img"
+							/>
+							<div class="selected-product__details">
+								<div class="selected-product__detail">
+									<p>Материал <span>Гибкий камень арт. kgs01</span></p>
+								</div>
+								<div class="selected-product__detail">
+									<p>стоимость от <span>1150 руб/м²</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="checkout__inner">
+						<div class="container">
+							<form action="#" class="checkout__form form">
+								<div class="form__body">
+									<div class="form__content">
+										<p class="form__text">
+											Заполните пожалуйста форму. Наш менеджер свяжется с вами
+											в течении одного рабочего дня.
+										</p>
+										<div class="form-field">
+											<label class="form-field__label" for="name"
+												>Как вас зовут? <span>*</span></label
+											>
+											<input
+												class="form-field__input input"
+												type="text"
+												name="name"
+												id="name"
+												placeholder="введите ваше имя"
+												required
+											/>
+										</div>
+										<div class="form-field">
+											<label class="form-field__label" for="phone"
+												>Телефон для связи с вами <span>*</span></label
+											>
+											<input
+												class="form-field__input input"
+												type="text"
+												name="phone"
+												id="phone"
+												placeholder="+7 (___) ___-__-__"
+												required
+											/>
+										</div>
+										<div class="form-field">
+											<label class="form-field__label" for="info"
+												>Что вы хотели узнать <span>*</span></label
+											>
+											<textarea
+												class="form-field__input input"
+												name="info"
+												id="info"
+												cols="30"
+												rows="10"
+												required
+											></textarea>
+										</div>
+										<div class="agreement">
+											<input
+												class="agreement__checkbox"
+												type="checkbox"
+												name="aggrement"
+												id="agreement-checkbox"
+												checked
+											/>
+											<label for="agreement-checkbox" class="agreement__text">
+												Я согласен с
+												<a class="link-green" href="#"
+													>правилами обработки персональных данных</a
+												>
+											</label>
+										</div>
+										<button type="submit" class="form__btn btn btn-reset">
+											Оформить заказ
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			@include('./assets/components/footer/footer.html')
+		</div>
+		<script src="./assets/vendors/swiper-bundle-min.js"></script>
+		<script src="./assets/vendors/imask.min.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
