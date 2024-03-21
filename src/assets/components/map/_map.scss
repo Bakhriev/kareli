@@ -21,7 +21,7 @@
 	width: 100%;
 	background-color: #222;
 	@media screen and (max-width: 1200px) {
-		height: 300px;
+		height: 400px;
 	}
 	@media screen and (max-width: 1200px) {
 		position: relative;
@@ -79,6 +79,10 @@
 .balloon-content {
 	position: relative;
 	padding-left: 13px;
+	@media screen and (max-width: 400px) {
+		padding-top: 13px;
+		padding-left: auto;
+	}
 
 	max-width: 300px;
 	width: 100%;
@@ -91,11 +95,19 @@
 		width: 13px;
 		height: 34px;
 		background: url('../img/svg/balloon-icon.svg') no-repeat center/cover;
+		@media screen and (max-width: 400px) {
+			top: -10px;
+			left: 50%;
+			transform: translateX(-50%) rotate(90deg);
+		}
 	}
 
 	&__inner {
 		padding: 40px;
 		background-color: #475251;
+		@media screen and (max-width: 400px) {
+			padding: 15px;
+		}
 	}
 
 	&__title {
@@ -171,12 +183,17 @@
 	left: 40px !important;
 	width: max-content !important;
 	box-shadow: none !important;
+	background: transparent !important;
+	@media screen and (max-width: 400px) {
+		top: -352px !important;
+		left: 10px !important;
+	}
 }
 
 .ymaps-2-1-79-balloon__content {
 	padding: 0 !important;
-	background-color: transparent !important;
 	width: max-content !important;
+	background: transparent !important;
 	& > ymaps {
 		height: max-content !important;
 		width: max-content !important;
