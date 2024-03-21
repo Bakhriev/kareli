@@ -61,69 +61,65 @@ const productSlider = new Swiper('.product__slider2', {
 	},
 });
 
-const element = document.getElementById('phone');
-const maskOptions = {
-	mask: '+7(000)000-00-00',
-	lazy: true,
-};
-
-const mask = new IMask(element, maskOptions);
-
-// Инициализация карты
-function initMap() {
-	const map = new ymaps.Map('map', {
-		center: [61.7866, 34.3596],
-		zoom: 16,
-		controls: [],
-	});
-
-	const geoLocationPin = new ymaps.Placemark(
-		[61.7866, 34.3596],
-
-		{
-			balloonContentBody: `
-			<div class="balloon-content">
-			<div class="balloon-content__icon"></div>
-			<div class="balloon-content__inner">
-				<div class="balloon-content__title">Производство в Карелии</div>
-				<div class="balloon-content__address">
-					185014 г. Петрозаводск, Республика Карелия, Россия
-				</div>
-				<div class="balloon-content__socials">
-					<a href="tel:+79213024630" class="balloon-content__number"
-						>+7 921 302-46-30</a
-					>
-					<a
-						href="mailto:pavel.mfcn@yandex.ru"
-						class="balloon-content__email"
-						>pavel.mfcn@yandex.ru</a
-					>
-				</div>
-				<div class="balloon-content__tagline">Режим работы</div>
-				<div class="balloon-content__work-time">пн-пт: 10:00—19:00</div>
-				<div class="balloon-content__work-time">сб-вс: 11:00—19:00</div>
-			</div>
-		</div>
-			`,
-		},
-		{
-			iconLayout: 'default#image',
-			iconImageHref: './assets/img/svg/geopin.svg',
-			iconImageSize: [40, 40],
-			iconImageOffset: [-20, -40],
-			closeButton: false,
-			hasHint: false,
-			balloonCloseButton: false,
-			hideIconOnBalloonOpen: false,
-		}
-	);
-
-	// Добавление метки на карту
-	map.geoObjects.add(geoLocationPin);
-}
-
-// Инициализация Yandex.Maps API
-
 document.addEventListener('DOMContentLoaded', () => {
+	function initMap() {
+		const map = new ymaps.Map('map', {
+			center: [61.7866, 34.3596],
+			zoom: 16,
+			controls: [],
+		});
+
+		const geoLocationPin = new ymaps.Placemark(
+			[61.7866, 34.3596],
+
+			{
+				balloonContentBody: `
+				<div class="balloon-content">
+				<div class="balloon-content__icon"></div>
+				<div class="balloon-content__inner">
+					<div class="balloon-content__title">Производство в Карелии</div>
+					<div class="balloon-content__address">
+						185014 г. Петрозаводск, Республика Карелия, Россия
+					</div>
+					<div class="balloon-content__socials">
+						<a href="tel:+79213024630" class="balloon-content__number"
+							>+7 921 302-46-30</a
+						>
+						<a
+							href="mailto:pavel.mfcn@yandex.ru"
+							class="balloon-content__email"
+							>pavel.mfcn@yandex.ru</a
+						>
+					</div>
+					<div class="balloon-content__tagline">Режим работы</div>
+					<div class="balloon-content__work-time">пн-пт: 10:00—19:00</div>
+					<div class="balloon-content__work-time">сб-вс: 11:00—19:00</div>
+				</div>
+			</div>
+				`,
+			},
+			{
+				iconLayout: 'default#image',
+				iconImageHref: './assets/img/svg/geopin.svg',
+				iconImageSize: [40, 40],
+				iconImageOffset: [-20, -40],
+				closeButton: false,
+				hasHint: false,
+				balloonCloseButton: false,
+				hideIconOnBalloonOpen: false,
+			}
+		);
+
+		// Добавление метки на карту
+		map.geoObjects.add(geoLocationPin);
+	}
 	ymaps.ready(initMap);
+
+	const element = document.getElementById('phone');
+	const maskOptions = {
+		mask: '+7(000)000-00-00',
+		lazy: true,
+	};
+
+	const mask = new IMask(element, maskOptions);
 });
