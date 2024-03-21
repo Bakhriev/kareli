@@ -35,6 +35,40 @@ overlay.addEventListener('click', () => {
 	body.classList.remove('disable-scroll');
 });
 
+const swiper = new Swiper('.hero__slider', {
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+
+const productSliderThumb = new Swiper('.product__slider', {
+	spaceBetween: 20,
+	slidesPerView: 'auto',
+	freeMode: true,
+	watchSlidesProgress: true,
+});
+
+const productSlider = new Swiper('.product__slider2', {
+	spaceBetween: 20,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	thumbs: {
+		swiper: productSliderThumb,
+	},
+});
+
+const element = document.getElementById('phone');
+const maskOptions = {
+	mask: '+7(000)000-00-00',
+	lazy: true,
+};
+
+const mask = new IMask(element, maskOptions);
+
 document.addEventListener('DOMContentLoaded', () => {
 	function initMap() {
 		const map = new ymaps.Map('map', {
@@ -88,38 +122,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		map.geoObjects.add(geoLocationPin);
 	}
 	ymaps.ready(initMap);
-
-	const element = document.getElementById('phone');
-	const maskOptions = {
-		mask: '+7(000)000-00-00',
-		lazy: true,
-	};
-
-	const mask = new IMask(element, maskOptions);
-
-	const swiper = new Swiper('.hero__slider', {
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-	});
-
-	const productSliderThumb = new Swiper('.product__slider', {
-		spaceBetween: 20,
-		slidesPerView: 'auto',
-		freeMode: true,
-		watchSlidesProgress: true,
-	});
-
-	const productSlider = new Swiper('.product__slider2', {
-		spaceBetween: 20,
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-
-		thumbs: {
-			swiper: productSliderThumb,
-		},
-	});
 });
