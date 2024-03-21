@@ -35,37 +35,11 @@ overlay.addEventListener('click', () => {
 	body.classList.remove('disable-scroll');
 });
 
-const swiper = new Swiper('.hero__slider', {
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-});
-
-const productSliderThumb = new Swiper('.product__slider', {
-	spaceBetween: 20,
-	slidesPerView: 'auto',
-	freeMode: true,
-	watchSlidesProgress: true,
-});
-
-const productSlider = new Swiper('.product__slider2', {
-	spaceBetween: 20,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-
-	thumbs: {
-		swiper: productSliderThumb,
-	},
-});
-
 document.addEventListener('DOMContentLoaded', () => {
 	function initMap() {
 		const map = new ymaps.Map('map', {
 			center: [61.7866, 34.3596],
-			zoom: 16,
+			zoom: 18,
 			controls: [],
 		});
 
@@ -122,4 +96,30 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	const mask = new IMask(element, maskOptions);
+
+	const swiper = new Swiper('.hero__slider', {
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+
+	const productSliderThumb = new Swiper('.product__slider', {
+		spaceBetween: 20,
+		slidesPerView: 'auto',
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+
+	const productSlider = new Swiper('.product__slider2', {
+		spaceBetween: 20,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+
+		thumbs: {
+			swiper: productSliderThumb,
+		},
+	});
 });
