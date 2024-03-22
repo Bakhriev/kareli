@@ -1,5 +1,6 @@
 .product-catalog {
 	padding-bottom: 100px;
+
 	&__title {
 		margin-bottom: 50px;
 		font-size: 52px;
@@ -37,6 +38,7 @@
 	}
 
 	&__name {
+		margin: 0;
 		margin-bottom: 10px;
 
 		font-family: var(--second-family);

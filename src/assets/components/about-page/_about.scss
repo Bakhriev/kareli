@@ -18,10 +18,6 @@
 	}
 
 	.user-content {
-		display: flex;
-		flex-direction: column;
-		gap: 50px;
-
 		@media screen and (max-width: 992px) {
 			gap: 25px;
 		}
@@ -112,9 +108,7 @@
 				color: var(--dark-green);
 			}
 		}
-		p + p {
-			margin-top: 15px;
-		}
+
 		blockquote {
 			padding: 40px 0;
 			font-family: var(--font-family);

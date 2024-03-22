@@ -69,7 +69,6 @@
 			h4,
 			h5,
 			h6 {
-				margin-bottom: 15px;
 				padding: 0 40px;
 
 				@media screen and (max-width: 768px) {
@@ -97,9 +96,6 @@
 					padding: 0 15px;
 					font-size: 16px;
 				}
-			}
-			p + p {
-				margin-top: 15px;
 			}
 		}
 	}
@@ -207,6 +203,7 @@
 		color: #e0e7e6;
 	}
 }
+
 .ymaps-2-1-79-balloon {
 	top: -90px !important;
 	left: 40px !important;
@@ -221,27 +218,27 @@
 
 .ymaps-2-1-79-balloon__content {
 	padding: 0 !important;
-	width: max-content !important;
 	background: transparent !important;
 	& > ymaps {
 		height: max-content !important;
 		width: max-content !important;
 	}
 }
+
 .ymaps-2-1-79-balloon__layout {
 	background-color: transparent !important;
-	width: max-content !important;
 }
 
 .ymaps-2-1-79-balloon__tail {
-	width: max-content !important;
 	&::after {
 		display: none !important;
 	}
 }
+
 .ymaps-2-1-79-map-copyrights-promo {
 	display: none !important;
 }
+
 .ymaps-2-1-79-copyright {
 	display: none !important;
 }

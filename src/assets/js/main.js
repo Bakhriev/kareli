@@ -88,14 +88,14 @@ const initMap = () => {
 };
 ymaps.ready(initMap);
 
-const heroSlider = new Swiper(heroSliderElement, {
+const heroSlider = new Swiper('.hero__slider', {
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
 });
 
-const productSliderThumb = new Swiper(productSliderElement, {
+const productSliderThumb = new Swiper('.product__slider-thumb', {
 	spaceBetween: 20,
 	slidesPerView: 'auto',
 	freeMode: true,
