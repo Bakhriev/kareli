@@ -1,6 +1,7 @@
 .section-map {
 	position: relative;
 	min-height: 750px;
+	overflow: hidden;
 	@media screen and (max-width: 1200px) {
 		min-height: 0px;
 	}
