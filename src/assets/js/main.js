@@ -42,24 +42,24 @@ const heroSlider = new Swiper('.hero__slider', {
 	},
 });
 
-const productSliderThumb = new Swiper('.product__slider', {
-	spaceBetween: 20,
-	slidesPerView: 'auto',
-	freeMode: true,
-	watchSlidesProgress: true,
-});
+// const productSliderThumb = new Swiper('.product__slider', {
+// 	spaceBetween: 20,
+// 	slidesPerView: 'auto',
+// 	freeMode: true,
+// 	watchSlidesProgress: true,
+// });
 
-const productSlider = new Swiper('.product__slider2', {
-	spaceBetween: 20,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
+// const productSlider = new Swiper('.product__slider2', {
+// 	spaceBetween: 20,
+// 	pagination: {
+// 		el: '.swiper-pagination',
+// 		clickable: true,
+// 	},
 
-	thumbs: {
-		swiper: productSliderThumb,
-	},
-});
+// 	thumbs: {
+// 		swiper: productSliderThumb,
+// 	},
+// });
 
 const element = document.getElementById('phone');
 const maskOptions = {
