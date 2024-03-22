@@ -1,13 +1,13 @@
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.header__nav');
 const overlay = document.querySelector('.overlay');
+const body = document.body;
 
 const form = document.querySelector('.form-wrapper');
 const formCloseBtn = document.querySelector('.form__close-btn');
-const askQuestionBtns = document.querySelectorAll('[data-trigger="form"]');
-const body = document.body;
+const formTriggerBtns = document.querySelectorAll('[data-trigger="form"]');
 
-askQuestionBtns.forEach(btn => {
+formTriggerBtns.forEach(btn => {
 	btn.addEventListener('click', () => {
 		form.classList.add('active');
 		body.classList.add('disable-scroll');
@@ -42,14 +42,14 @@ const heroSlider = new Swiper('.hero__slider', {
 	},
 });
 
-const productSliderThumb = new Swiper('.product__slider', {
+const productSliderThumb = new Swiper('.product__slider-thumb', {
 	spaceBetween: 20,
 	slidesPerView: 'auto',
 	freeMode: true,
 	watchSlidesProgress: true,
 });
 
-const productSlider = new Swiper('.product__slider2', {
+const productSliderMain = new Swiper('.product__slider-main', {
 	spaceBetween: 20,
 	pagination: {
 		el: '.swiper-pagination',

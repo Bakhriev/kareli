@@ -22,7 +22,7 @@
 		}
 	}
 
-	&__slider2 {
+	&__slider-main {
 		height: 530px;
 		margin-bottom: 20px;
 		.swiper-pagination {
@@ -55,7 +55,7 @@
 	&__pagination-wrapper {
 	}
 
-	&__slider {
+	&__slider-thumb {
 		height: 84px;
 		@media screen and (max-width: 768px) {
 			display: none;
