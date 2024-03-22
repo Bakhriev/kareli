@@ -62,12 +62,14 @@ const productSliderMain = new Swiper('.product__slider-main', {
 });
 
 const element = document.getElementById('phone');
+const element1 = document.getElementById('phone1');
 const maskOptions = {
 	mask: '+7(000)000-00-00',
 	lazy: true,
 };
 
 const mask = new IMask(element, maskOptions);
+const mask1 = new IMask(element1, maskOptions);
 
 const initMap = () => {
 	const map = new ymaps.Map('map', {
