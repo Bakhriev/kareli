@@ -35,43 +35,6 @@ overlay.addEventListener('click', () => {
 	body.classList.remove('disable-scroll');
 });
 
-const heroSlider = new Swiper('.hero__slider', {
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-});
-
-const productSliderThumb = new Swiper('.product__slider-thumb', {
-	spaceBetween: 20,
-	slidesPerView: 'auto',
-	freeMode: true,
-	watchSlidesProgress: true,
-});
-
-const productSliderMain = new Swiper('.product__slider-main', {
-	spaceBetween: 20,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-
-	thumbs: {
-		swiper: productSliderThumb,
-	},
-});
-
-const element = document.getElementById('phone');
-const element1 = document.getElementById('order-phone');
-
-const maskOptions = {
-	mask: '+7(000)000-00-00',
-	lazy: true,
-};
-
-const mask = new IMask(element, maskOptions);
-const mask1 = new IMask(element1, maskOptions);
-
 const initMap = () => {
 	const map = new ymaps.Map('map', {
 		center: [61.7866, 34.3596],
@@ -124,3 +87,45 @@ const initMap = () => {
 	map.geoObjects.add(geoLocationPin);
 };
 ymaps.ready(initMap);
+
+const heroSlider = new Swiper(heroSliderElement, {
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+
+const productSliderThumb = new Swiper(productSliderElement, {
+	spaceBetween: 20,
+	slidesPerView: 'auto',
+	freeMode: true,
+	watchSlidesProgress: true,
+});
+
+const productSliderMain = new Swiper('.product__slider-main', {
+	spaceBetween: 20,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+
+	thumbs: {
+		swiper: productSliderThumb,
+	},
+});
+
+const phone = document.getElementById('phone');
+const orderPhone = document.getElementById('order-phone');
+
+const maskOptions = {
+	mask: '+7(000)000-00-00',
+	lazy: true,
+};
+
+if (phone !== undefined) {
+	const mask = new IMask(phone, maskOptions);
+}
+
+if (orderPhone !== undefined) {
+	const mask1 = new IMask(orderPhone, maskOptions);
+}
