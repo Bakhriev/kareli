@@ -95,6 +95,20 @@
 				height: 10px;
 				background-color: #147470;
 			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(
+						0deg,
+						rgba(0, 0, 0, 0.44) 1.2%,
+						rgba(0, 0, 0, 0) 66.8%
+					),
+					url(image);
+			}
 			display: flex;
 			min-height: 500px;
 
