@@ -44,6 +44,37 @@
 	}
 
 	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 30px;
+		.user-content {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			p {
+				display: flex;
+				align-items: flex-start;
+				gap: 10px;
+
+				&:first-child {
+					font-size: 20px;
+					color: #333;
+				}
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 1;
+				color: #475251;
+				strong {
+					font-size: 21px;
+					line-height: 1;
+					text-align: center;
+					color: #333;
+				}
+			}
+		}
 	}
 
 	&__img {
@@ -79,8 +110,6 @@
 	}
 
 	&__price {
-		margin-bottom: 30px;
-
 		font-family: var(--font-family);
 		font-weight: 400;
 		font-size: 18px;
@@ -106,74 +135,38 @@
 		width: 100%;
 		margin-left: auto;
 		padding: 30px 0;
-	}
+		.user-content {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin-bottom: 15px;
 
-	&__desc-title {
-		margin-bottom: 15px;
-
-		font-family: var(--second-family);
-		font-weight: 700;
-		font-size: 32px;
-		line-height: 1;
-		letter-spacing: -0.02em;
-		color: #000;
-	}
-
-	&__desc-text {
-		font-family: var(--font-family);
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 1.25;
-		letter-spacing: -0.01em;
-		color: #333;
-		& + p {
-			margin-top: 15px;
-		}
-		&:last-child {
-			margin-bottom: 45px;
-		}
-	}
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
-.product-details {
-	margin-bottom: 30px;
-
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	&__item {
-		font-family: var(--font-family);
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 1;
-		color: #475251;
-		span {
-			font-weight: 700;
-			font-size: 21px;
-			color: #333;
+				font-family: var(--second-family);
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 1;
+				letter-spacing: -0.02em;
+				color: #000;
+			}
+			p {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 1.25;
+				letter-spacing: -0.01em;
+				color: #333;
+			}
+			p + p {
+				margin-top: 15px;
+			}
 		}
 	}
 
-	&__made {
-		font-family: var(--font-family);
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 1;
-		color: #333;
+	&__back-link {
+		display: block;
+		margin-top: 45px;
 	}
-}
-.list-reset {
-}
-.btn {
-}
-.btn-reset {
-}
-.link-back {
 }

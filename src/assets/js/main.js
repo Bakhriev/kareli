@@ -62,7 +62,8 @@ const productSliderMain = new Swiper('.product__slider-main', {
 });
 
 const element = document.getElementById('phone');
-const element1 = document.getElementById('phone1');
+const element1 = document.getElementById('order-phone');
+
 const maskOptions = {
 	mask: '+7(000)000-00-00',
 	lazy: true,
