@@ -69,19 +69,18 @@ const maskOptions = {
 
 const mask = new IMask(element, maskOptions);
 
-window.addEventListener('load', () => {
-	function initMap() {
-		const map = new ymaps.Map('map', {
-			center: [61.7866, 34.3596],
-			zoom: 18,
-			controls: [],
-		});
+function initMap() {
+	const map = new ymaps.Map('map', {
+		center: [61.7866, 34.3596],
+		zoom: 18,
+		controls: [],
+	});
 
-		const geoLocationPin = new ymaps.Placemark(
-			[61.7866, 34.3596],
+	const geoLocationPin = new ymaps.Placemark(
+		[61.7866, 34.3596],
 
-			{
-				balloonContentBody: `
+		{
+			balloonContentBody: `
 				<div class="balloon-content">
 				<div class="balloon-content__icon"></div>
 				<div class="balloon-content__inner">
@@ -105,21 +104,20 @@ window.addEventListener('load', () => {
 				</div>
 			</div>
 				`,
-			},
-			{
-				iconLayout: 'default#image',
-				iconImageHref: './assets/img/svg/geopin.svg',
-				iconImageSize: [40, 40],
-				iconImageOffset: [-20, -40],
-				closeButton: false,
-				hasHint: false,
-				balloonCloseButton: false,
-				hideIconOnBalloonOpen: false,
-			}
-		);
+		},
+		{
+			iconLayout: 'default#image',
+			iconImageHref: './assets/img/svg/geopin.svg',
+			iconImageSize: [40, 40],
+			iconImageOffset: [-20, -40],
+			closeButton: false,
+			hasHint: false,
+			balloonCloseButton: false,
+			hideIconOnBalloonOpen: false,
+		}
+	);
 
-		// Добавление метки на карту
-		map.geoObjects.add(geoLocationPin);
-	}
-	ymaps.ready(initMap);
-});
+	// Добавление метки на карту
+	map.geoObjects.add(geoLocationPin);
+}
+ymaps.ready(initMap);
