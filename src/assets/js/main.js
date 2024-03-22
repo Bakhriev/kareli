@@ -88,16 +88,15 @@ overlay.addEventListener('click', () => {
 // };
 
 // ymaps.ready(initMap);
-const initMap = () => {
+
+ymaps3.ready.then(() => {
 	const map = new ymaps3.YMap(document.getElementById('map'), {
 		location: {
-			center: [37.64, 55.76],
+			center: [61.7866, 34.3596],
 			zoom: 10,
 		},
 	});
-};
-
-ymaps3.ready.then(initMap);
+});
 
 const heroSlider = new Swiper('.hero__slider', {
 	pagination: {
