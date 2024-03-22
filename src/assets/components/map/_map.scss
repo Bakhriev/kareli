@@ -204,41 +204,41 @@
 	}
 }
 
-.ymaps-2-1-79-balloon {
-	top: -90px !important;
-	left: 40px !important;
-	width: max-content !important;
-	box-shadow: none !important;
-	background: transparent !important;
-	@media screen and (max-width: 400px) {
-		top: -352px !important;
-		left: 10px !important;
-	}
-}
+// .ymaps-2-1-79-balloon {
+// 	top: -90px !important;
+// 	left: 40px !important;
+// 	width: max-content !important;
+// 	box-shadow: none !important;
+// 	background: transparent !important;
+// 	@media screen and (max-width: 400px) {
+// 		top: -352px !important;
+// 		left: 10px !important;
+// 	}
+// }
 
-.ymaps-2-1-79-balloon__content {
-	padding: 0 !important;
-	background: transparent !important;
-	& > ymaps {
-		height: max-content !important;
-		width: max-content !important;
-	}
-}
+// .ymaps-2-1-79-balloon__content {
+// 	padding: 0 !important;
+// 	background: transparent !important;
+// 	& > ymaps {
+// 		height: max-content !important;
+// 		width: max-content !important;
+// 	}
+// }
 
-.ymaps-2-1-79-balloon__layout {
-	background-color: transparent !important;
-}
+// .ymaps-2-1-79-balloon__layout {
+// 	background-color: transparent !important;
+// }
 
-.ymaps-2-1-79-balloon__tail {
-	&::after {
-		display: none !important;
-	}
-}
+// .ymaps-2-1-79-balloon__tail {
+// 	&::after {
+// 		display: none !important;
+// 	}
+// }
 
-.ymaps-2-1-79-map-copyrights-promo {
-	display: none !important;
-}
+// .ymaps-2-1-79-map-copyrights-promo {
+// 	display: none !important;
+// }
 
-.ymaps-2-1-79-copyright {
-	display: none !important;
-}
+// .ymaps-2-1-79-copyright {
+// 	display: none !important;
+// }
