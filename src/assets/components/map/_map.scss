@@ -20,7 +20,13 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: #222;
+	background: rgb(173, 172, 184);
+	background: linear-gradient(
+		90deg,
+		rgba(173, 172, 184, 1) 0%,
+		rgba(194, 194, 210, 1) 35%,
+		rgba(131, 146, 149, 1) 100%
+	);
 	@media screen and (max-width: 1200px) {
 		height: 400px;
 	}
@@ -41,7 +47,7 @@
 	}
 
 	&__content {
-		padding: 30px 40px 40px 40px;
+		padding: 30px 40px 40px 42px;
 		font-family: var(--font-family);
 		font-weight: 400;
 		font-size: 18px;
