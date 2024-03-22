@@ -103,6 +103,8 @@
 
 .balloon-content {
 	position: relative;
+	left: 100px;
+	top: -30px;
 	padding-left: 13px;
 	@media screen and (max-width: 400px) {
 		padding-top: 13px;
@@ -115,23 +117,18 @@
 	&__icon {
 		position: absolute;
 		z-index: 5;
-		left: 0px;
+		left: 1px;
 		top: 50px;
 		width: 13px;
 		height: 34px;
 		background: url('../img/svg/balloon-icon.svg') no-repeat center/cover;
-		@media screen and (max-width: 400px) {
-			top: -10px;
-			left: 50%;
-			transform: translateX(-50%) rotate(90deg);
-		}
 	}
 
 	&__inner {
 		padding: 40px;
 		background-color: #475251;
 		@media screen and (max-width: 400px) {
-			padding: 15px;
+			padding: 15px 20px;
 		}
 	}
 
@@ -204,41 +201,6 @@
 	}
 }
 
-// .ymaps-2-1-79-balloon {
-// 	top: -90px !important;
-// 	left: 40px !important;
-// 	width: max-content !important;
-// 	box-shadow: none !important;
-// 	background: transparent !important;
-// 	@media screen and (max-width: 400px) {
-// 		top: -352px !important;
-// 		left: 10px !important;
-// 	}
-// }
-
-// .ymaps-2-1-79-balloon__content {
-// 	padding: 0 !important;
-// 	background: transparent !important;
-// 	& > ymaps {
-// 		height: max-content !important;
-// 		width: max-content !important;
-// 	}
-// }
-
-// .ymaps-2-1-79-balloon__layout {
-// 	background-color: transparent !important;
-// }
-
-// .ymaps-2-1-79-balloon__tail {
-// 	&::after {
-// 		display: none !important;
-// 	}
-// }
-
-// .ymaps-2-1-79-map-copyrights-promo {
-// 	display: none !important;
-// }
-
-// .ymaps-2-1-79-copyright {
-// 	display: none !important;
-// }
+.ymaps3x0--map-copyrights {
+	display: none !important;
+}
