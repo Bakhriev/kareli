@@ -69,7 +69,7 @@ const maskOptions = {
 
 const mask = new IMask(element, maskOptions);
 
-function initMap() {
+const initMap = () => {
 	const map = new ymaps.Map('map', {
 		center: [61.7866, 34.3596],
 		zoom: 18,
@@ -119,5 +119,5 @@ function initMap() {
 
 	// Добавление метки на карту
 	map.geoObjects.add(geoLocationPin);
-}
+};
 ymaps.ready(initMap);
