@@ -20,12 +20,12 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: rgb(173, 172, 184);
+	background: rgb(47, 47, 49);
 	background: linear-gradient(
 		90deg,
-		rgba(173, 172, 184, 1) 0%,
-		rgba(194, 194, 210, 1) 35%,
-		rgba(131, 146, 149, 1) 100%
+		rgb(74, 73, 80) 0%,
+		rgb(96, 96, 97) 35%,
+		rgb(33, 35, 36) 100%
 	);
 	@media screen and (max-width: 1200px) {
 		height: 400px;
@@ -44,6 +44,13 @@
 		height: 250px;
 		width: 100%;
 		object-fit: cover;
+		background: rgb(47, 47, 49);
+		background: linear-gradient(
+			90deg,
+			rgb(142, 140, 151) 0%,
+			rgb(96, 96, 97) 35%,
+			rgb(122, 124, 126) 100%
+		);
 	}
 
 	&__content {
