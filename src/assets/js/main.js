@@ -35,7 +35,7 @@ overlay.addEventListener('click', () => {
 	body.classList.remove('disable-scroll');
 });
 
-const swiper = new Swiper('.hero__slider', {
+const heroSlider = new Swiper('.hero__slider', {
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -69,7 +69,7 @@ const maskOptions = {
 
 const mask = new IMask(element, maskOptions);
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
 	function initMap() {
 		const map = new ymaps.Map('map', {
 			center: [61.7866, 34.3596],
