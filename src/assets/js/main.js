@@ -45,7 +45,7 @@ async function initMap() {
 
 	const map = new YMap(document.getElementById('map'), {
 		location: {
-			center: [37.588144, 55.733842],
+			center: [64.456276, 39.766781],
 			zoom: 10,
 		},
 	});
@@ -54,7 +54,7 @@ async function initMap() {
 
 	const geoMarker = new YMapMarker(
 		{
-			coordinates: [37.588144, 55.733842],
+			coordinates: [64.456276, 39.766781],
 			draggable: false,
 		},
 		geopin
@@ -62,7 +62,7 @@ async function initMap() {
 
 	const balloonMarker = new YMapMarker(
 		{
-			coordinates: [37.588144, 55.733842],
+			coordinates: [64.456276, 39.766781],
 			draggable: false,
 		},
 		balloonContent
@@ -101,11 +101,17 @@ async function initMap() {
 	`;
 
 	geopin.innerHTML = `
-	<svg width="50" height="64" viewBox="0 0 50 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg class='balloon-toggle' width="50" height="64" viewBox="0 0 50 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M44.9916 40.0137C48.1362 35.833 50 30.6342 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 30.6342 1.86379 35.833 5.00845 40.0137L5 40.0221L25 63.5L45 40.0221L44.9916 40.0137Z" fill="#147470"/>
 	<circle cx="25" cy="25" r="8" fill="white"/>
 	</svg>
 	`;
+
+	const balloonToggle = document.querySelector('.balloon-toggle');
+	const balloon = document.querySelector('.balloon-content');
+	balloonToggle.addEventListener('click', () => {
+		balloon.classList.toggle('hide');
+	});
 }
 
 const heroSlider = new Swiper('.hero__slider', {
