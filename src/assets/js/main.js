@@ -121,7 +121,7 @@ const calcMapMargin = () => {
 	if (window.innerWidth <= 600) return [0, center, 300, 0];
 	if (window.innerWidth <= 768) return [0, center, 300, 0];
 	if (window.innerWidth <= 1200) return [0, center, 300, 0];
-	return [0, center, 0, 0];
+	return [0, center, 300, 0];
 };
 
 const heroSlider = new Swiper('.hero__slider', {
