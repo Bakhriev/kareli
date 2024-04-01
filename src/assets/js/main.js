@@ -48,6 +48,8 @@ async function initMap() {
 			center: [64.456276, 39.766781],
 			zoom: 10,
 		},
+		copyrights: false,
+		margin: calcMapMargin(),
 	});
 	const balloonContent = document.createElement('div');
 	const geopin = document.createElement('div');
@@ -113,6 +115,14 @@ async function initMap() {
 		balloon.classList.toggle('hide');
 	});
 }
+
+const calcMapMargin = () => {
+	const center = window.innerWidth / 2 + 200;
+	if (window.innerWidth <= 600) return [0, center, 300, 0];
+	if (window.innerWidth <= 768) return [0, center, 300, 0];
+	if (window.innerWidth <= 1200) return [0, center, 300, 0];
+	return [0, center, 0, 0];
+};
 
 const heroSlider = new Swiper('.hero__slider', {
 	pagination: {
